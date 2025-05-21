@@ -1,0 +1,64 @@
+Please review and update the backend database models and logging logic for the Crypto Clarity application to ensure proper tracking of user activity, premium signups, and Clarity Scan interactions. The goal is to structure the data as a professional data engineer would — with clean schema, normalized fields, and efficient logging — to support future analytics, growth, and premium feature tracking.
+
+Specifically:
+
+1. Database Schema Updates:
+Create or update a users table (or collection) with the following fields:
+
+email (string)
+
+is_admin (boolean)
+
+joined_at (timestamp)
+
+subscribed_to_blog (boolean)
+
+requested_premium (boolean)
+
+When a user provides their email for premium features, create or update their user record. If the email matches an admin email, set is_admin = true. If they opt in to the Clarity Blog Distro, set subscribed_to_blog = true.
+
+2. Log Clarity Scan Activity:
+Create or update a scan_logs table (or collection) with fields:
+
+timestamp (datetime)
+
+scan_type (string: "free" or "premium")
+
+input_type (string: "address_only", "scenario_only", or "both")
+
+submitted_address_1 (string, optional)
+
+submitted_address_2 (string, optional)
+
+user_email (string, if available)
+
+admin_override_used (boolean)
+
+ai_summary (text)
+
+etherscan_data (JSON or structured fields, as appropriate)
+
+Log one entry for every scan submitted — whether free, premium, or admin-bypassed. Use clear values for scan type and input type to support downstream analysis.
+
+3. Logging Premium Feature Usage:
+When a user clicks or submits any premium feature (even if not paid yet), log this in a premium_requests table with:
+
+email
+
+feature_requested (string: "investigation", "wallet_report", etc.)
+
+timestamp
+
+was_admin (boolean)
+
+4. Best Practices:
+
+Ensure no duplicate user records are created per email
+
+Ensure timestamps are stored in ISO format or UNIX timestamps
+
+Use efficient and scalable storage (e.g., Replit DB or Supabase-compatible structure)
+
+Apply input validation and safely handle cases where no email is provided
+
+Please confirm that all user activity is being logged appropriately based on this schema and that admin actions are properly tracked and stored. After applying the updates, ensure the database can be used for analytics, growth tracking, and future user account infrastructure.

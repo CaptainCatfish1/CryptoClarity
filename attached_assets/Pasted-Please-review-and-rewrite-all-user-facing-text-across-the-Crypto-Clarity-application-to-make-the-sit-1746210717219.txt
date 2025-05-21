@@ -1,0 +1,78 @@
+Please review and rewrite all user-facing text across the Crypto Clarity application to make the site more friendly, clear, and action-oriented for new users. The goal is to make it feel like a supportive Web3 assistant that helps someone who is new, confused, or worried about scams.
+
+Update the copy across the homepage, tab headers, buttons, inputs, and any tooltips or default messages using the tone of a helpful guide. Avoid overly technical language or robotic prompts.
+
+Here are the specific changes and suggestions:
+
+1. Hero Section and Home Page (My Clarity Tab):
+Replace any vague or generic messaging with direct copy like:
+
+“Worried about a crypto transaction? You’re in the right place.”
+
+“Check a suspicious address, learn what a crypto term means, or request an expert investigation.”
+
+“Crypto Clarity helps you stay safe in Web3 — no experience needed.”
+
+Include clear buttons or links to:
+
+“Run a Clarity Scan”
+
+“Learn a Crypto Term”
+
+“Talk to an Expert”
+
+2. Crypto Clarity Tab (Jargon Translator):
+Update the input field placeholder to:
+
+“Ask your question or enter a crypto term…”
+
+Change the main button to:
+
+“Explain This”
+
+Update any labels to emphasize simplicity, like:
+
+“Explain Like I’m New”
+“Need more detail? Request a Premium Breakdown”
+
+3. Clarity Scan Tab (Scam Checker):
+Update all field labels for clarity:
+
+“Describe what happened…”
+
+“Suspicious Wallet Address (optional)”
+
+“Your Wallet Address (optional)”
+
+Make the scan button say:
+
+“Run Scam Check”
+
+If the user hits their limit, the prompt should say:
+
+“You’ve used all 5 free checks for today. Get unlimited scans and deeper insights by upgrading to Premium.”
+
+4. Contact / Expert Request Modals:
+
+Use copy like:
+
+“Need help with a suspicious address or transaction?”
+“Submit your situation and we’ll connect you with a blockchain expert.”
+
+Submit button should say:
+
+“Request Investigation”
+
+5. Footer and Navigation:
+Keep navigation simple with options like:
+
+“Home”
+
+“Run a Scan”
+
+“Check a Term”
+
+“Contact Support”
+In the footer, remove generic links like “Resources” or “Company” and keep it focused on support and trust.
+
+Throughout the site, ensure the language is direct, action-oriented, and user-first. Assume the user is curious but overwhelmed. Be encouraging, not intimidating.

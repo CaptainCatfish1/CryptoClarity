@@ -1,0 +1,77 @@
+Please update the Crypto Clarity application based on the following refined product and business requirements:
+
+1. Tab Naming and Feature Labels
+Rename the Crypto Jargon feature to:
+"Crypto Clarity"
+
+Rename the Scam Checker feature to:
+"Clarity Scan"
+
+Update all tabs, labels, headers, and internal references accordingly.
+
+Ensure the tab switching still works correctly and the UI is consistent.
+
+2. Homepage Headline
+Update the main hero headline to:
+"Crypto Clarity Starts Here."
+
+Use a crypto-native font (e.g., Orbitron, Fira, or another Web3-modern font) that is still readable for elderly or less technical users.
+
+3. Submission Logging
+Log every submission from Crypto Clarity and Clarity Scan features.
+
+Store:
+
+Timestamp
+
+Feature used (clarity or scan)
+
+User input
+
+Wallet address (if provided)
+
+AI-generated response
+
+Use a simple and secure backend storage method (Replit DB, SQLite, etc.).
+
+4. Free vs Paid Tier Boundary
+Introduce a clear separation between free and premium features.
+
+Free Tier:
+Unlimited access to:
+
+Crypto Clarity
+
+Clarity Scan (basic risk check)
+
+Paid Tier (design only, placeholder logic):
+Visual block or modal introducing premium services:
+
+Expert Investigation Request (e.g., $15+ one-time):
+Users submit full case, reviewed manually.
+
+Detailed Wallet Risk Report:
+In-depth analysis of address activity and risks.
+
+Crypto Scam Intelligence Briefing (Weekly/Monthly):
+
+Show placeholder message: "This report will be sent out soon to early access subscribers."
+
+Visually show locked or premium-only features.
+
+For now, allow modal or email submission in place of payment integration.
+
+5. UX/UI Guidance
+Center and format the entire layout cleanly for both desktop and mobile.
+
+Keep dark mode by default.
+
+Apply a consistent, modern visual hierarchy (titles, buttons, cards).
+
+Ensure readability and accessibility while still maintaining a "cool," crypto-native look.
+
+Footer should include:
+
+"My Crypto Clarity is built by Hayward Digital LLC, based in Baltimore, MD. Empowering users for the future of Web3."
+
+Use your existing Node.js/Express backend and update the frontend as needed. Maintain current routing, but apply all UI and backend updates described here.

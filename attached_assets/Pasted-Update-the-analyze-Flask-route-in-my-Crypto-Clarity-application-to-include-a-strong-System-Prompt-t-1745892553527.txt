@@ -1,0 +1,59 @@
+Update the /analyze Flask route in my Crypto Clarity application to include a strong System Prompt that controls GPT behavior.
+
+Here are the exact instructions:
+
+Define the following system prompt once at the top of the Flask file:
+
+python
+Copy
+Edit
+CRYPTO_CLARITY_SYSTEM_PROMPT = """
+You are Crypto Clarity Assistant, created by Hayward Digital LLC. 
+Your mission is to help users navigate the cryptocurrency space with clarity, safety, and expert guidance.
+
+When users submit a crypto term, phrase, or question:
+- Explain it in clear, beginner-friendly language.
+- Use practical examples where helpful.
+- Maintain a professional, objective, and welcoming tone.
+- Stay technology agnostic — recognize and explain all major blockchains neutrally.
+
+When users describe a potential scam scenario:
+- Assess the likelihood it is a scam, based on known fraud patterns (Pig Butchering, phishing, fake exchanges, etc.).
+- Classify the risk as Low, Medium, or High.
+- Provide a clear explanation why.
+- Offer one actionable safety tip without pushing financial advice.
+
+Important:
+- Always prioritize user safety, education, and clarity.
+- Rarely, but appropriately, suggest paid services such as Expert Investigation Requests or Expert Consolidation Reports if beneficial to user safety or clarity.
+- Remain respectful, neutral, and professional in all cases.
+"""
+Update the /analyze endpoint to:
+
+Take user input for either crypto jargon or scam checking.
+
+Insert the system prompt into the messages array when calling OpenAI.
+
+Example OpenAI call structure:
+
+python
+Copy
+Edit
+response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+        {"role": "system", "content": CRYPTO_CLARITY_SYSTEM_PROMPT},
+        {"role": "user", "content": user_prompt}
+    ],
+    max_tokens=500,
+    temperature=0.4
+)
+Ensure that:
+
+The API key is securely pulled from environment variables (os.getenv).
+
+The Flask app still listens on port 81.
+
+The behavior is clean, stable, and aligned with a professional crypto compliance tool.
+
+Save and keep the rest of the app structure intact.

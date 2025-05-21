@@ -1,0 +1,25 @@
+Please update the Crypto Clarity application to implement a free-tier usage limit, a premium feature access flow, and basic email capture. First, add usage tracking for free-tier users across both the Crypto Clarity and Clarity Scan tools. Each user should be allowed up to 5 free prompts per day, without needing to log in. Use local storage or cookies to track usage on the client side. Once the 5-prompt limit is reached, the interface should prompt the user with a modal or interstitial message that says: "You've reached your daily free Clarity limit. Join Clarity to unlock unlimited scans, deeper investigations, and future safety reports." The user should then be given an option to either sign up or provide their email.
+
+Second, build and style a clean, modern premium landing section. This section should introduce the paid features and communicate the benefits clearly. Include the following callouts:
+
+"Expert Investigation Requests" for detailed scam reviews
+
+"Wallet Risk Reports" with address analysis
+
+"Monthly Scam Intelligence Briefings" (add “Coming Soon” note)
+
+“Join the Clarity Blog Distro” for Web3 safety insights
+
+Each premium item should have a “Request Access” or “Join Now” button. Clicking any premium feature or hitting the free-tier limit should trigger a modal or slide-out form that asks the user for their email. The email should be saved (via Replit DB or another simple storage method) without requiring full account creation. Phrase the email form as:
+
+“Want expert support, deeper tools, or to stay updated? Join the Clarity Blog Distro.”
+
+Also, if the user tries to:
+
+Click a premium feature,
+
+Save responses,
+
+View past reports, Prompt them to create an account or enter their email. For now, just collect the email — no full login is required.
+
+Style all new modals, buttons, and prompts consistently with the current dark theme. Use Crypto Clarity’s design elements — purple for free, orange for premium, and readable fonts across devices. Ensure the user experience remains smooth, accessible, and mobile-friendly. Maintain existing functionality while layering these updates.

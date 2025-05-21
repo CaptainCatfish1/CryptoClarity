@@ -1,0 +1,120 @@
+Please update and redesign the Crypto Clarity web application with the following goals and specifications:
+
+High-Level Concept:
+My Crypto Clarity is a professional user support tool designed to provide ad-hoc insurance-like guidance for blockchain participants.
+
+It helps users navigate uncertainty when interacting with crypto:
+
+Understanding terms
+
+Risk checking transactions
+
+Getting expert safety advice
+
+The goal is to onboard users and provide a feeling of safety and clarity while they learn and operate in Web3.
+
+The vibe should be professional yet crypto-native — think the design quality of platforms like Arkham Intelligence or Breadcrumbs: simple, clean, powerful, and "built for the people."
+It should feel more like a fintech tool than a casual app.
+
+Detailed Requirements:
+
+1. Layout and Structure:
+
+Center and properly format the entire page for both desktop and mobile.
+
+Implement a professional, screen-centered container with max width (e.g., 1200px).
+
+2. Header:
+
+Add a professional, minimalist header.
+
+Display the product name: My Crypto Clarity.
+
+Include a small logo (you can create a simple icon — shield, chain link, or eye of clarity) placed beside or above the title.
+
+The header should feel subtle but strong — not loud, not cartoonish.
+
+3. Tabs Navigation:
+
+Create three tabs at the top for navigation:
+
+My Clarity (highlighted a different accent color — Baltimore Ravens purple)
+
+Crypto Jargon
+
+Scam Checker
+
+Make the tabs clearly clickable and smoothly switch between the sections without reloading the page (use lightweight frontend JS).
+
+4. Hero Section (Under My Clarity Tab):
+
+Brief, powerful statement at the top:
+
+"Crypto Confidence Starts Here.
+Expert support for a safer blockchain journey."
+
+Underneath that, add three short bullet points:
+
+Tools for clarity while navigating crypto
+
+Scam and risk checks for peace of mind
+
+Experts ready to guide your blockchain journey
+
+5. Footer:
+
+Add a professional footer with:
+
+Text:
+
+"My Crypto Clarity is built by Hayward Digital LLC, based in Baltimore, MD. Empowering users for the future of Web3."
+
+Simple, small font, aligned center at the bottom of the page.
+
+6. Contact Us Feature:
+
+Add a "Contact Us" section accessible from the footer or header (button or link).
+
+On clicking, open a simple form:
+
+Name
+
+Message
+
+Hidden backend action to email submissions to brentphayward1@gmail.com.
+
+Mask the public email as help@mycryptoclarity.com.
+
+Automatically pre-fill email subject lines with: "Crypto Clarity Request:".
+
+Do not expose the backend email address directly to the user.
+
+7. Color Palette:
+
+Dark background (pure black or very dark gray).
+
+Primary accent color: Baltimore Ravens Purple.
+
+Secondary highlight color: Penn State Blue.
+
+Use white or very light gray for text.
+
+8. Branding Tone:
+
+Professional but not corporate.
+
+Crypto-native: clean, stylish, futuristic but serious.
+
+No cartoon graphics. Use geometric or minimalist design elements if needed.
+
+Prioritize clarity, security, professionalism, and accessibility.
+
+Technical Reminders:
+
+Use lightweight frontend technologies — vanilla HTML/CSS/JS is fine unless a small library (like TailwindCSS) significantly improves the structure.
+
+Ensure everything is mobile responsive.
+
+Follow accessibility best practices (clear labels, sufficient contrast).
+
+Please implement all of these updates in one clean, structured pass, and do not be afraid to rebuild sections for better clarity or user experience.

@@ -1,0 +1,25 @@
+Please update the Crypto Clarity application with the following UI and logic changes:
+
+1. Contact Us Functionality:
+Ensure that both the "Contact Us" button at the top navigation bar and the "Contact Us" link in the footer open the same window or modal where users can submit a support request. This window should contain a simple form with name (optional), email (required), subject line starting with "Crypto Clarity Request:", and message. The form should send the data to the existing support email endpoint or store it in the database for now.
+
+2. Updates to the "My Clarity" Tab:
+Remove the four content blocks currently displayed under the My Clarity tab. Replace them with a clean, centered display of the Premium features, listed as:
+
+Unlimited Prompts
+
+Advanced Analysis
+
+Expert Request
+Each should be shown as a bulleted or icon-styled list with simple labels and consistent spacing. The goal is to position this section as a quick explanation of what users get with premium access.
+
+3. Footer Simplification:
+In the footer, remove the "Resources" list and the "Company" list entirely. Keep only the essential contact or copyright information.
+
+4. Crypto Clarity Premium Button Update:
+In the Crypto Clarity tab, remove the “For Intermediate Users” button completely. Instead of having a separate premium-tier prompt button, change the model so that free users are limited to five prompts per day, and paid users (premium) get unlimited prompts using the same interface. Update the remaining prompt button styling and label to simply say:
+“Unlock Unlimited Prompts” (if the user is not premium) or “Submit Prompt” (if the user is already premium or admin). Clicking “Unlock Unlimited Prompts” should take the user to the premium upsell flow or email capture modal.
+
+Also, please ensure that the free prompt limit resets once per day. You may continue using localStorage, but ensure the reset logic is tied to a daily timestamp so users can regain access each day.
+
+Make sure all visual updates maintain the current dark mode theme, spacing, and consistent mobile responsiveness.
